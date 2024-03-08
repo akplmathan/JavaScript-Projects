@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: darkgray;
+    flex-direction: column;
+}
+.flex1{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.clock::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: translate(-30%,-50%);
+    background-color: var(--bgcolor);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+}
+.clock{
+    
+    --bgcolor:rgb(39, 25, 231);
+    height: 500px;
+    width: 500px;
+    background: white;
+    border-radius: 50%;
+    border: 50px groove var(--bgcolor); 
+    position: relative; 
+    display: flex;
+}
+.number{
+    --rotate:0;
+    width: 100%;
+    height:100%;
+    font-size: 25px;
+    position:absolute;
+    text-align: center;
+    transform: rotate(var(--rotate));
+}
+.number1{--rotate:30deg}
+.number2{--rotate:60deg}
+.number3{--rotate:90deg}
+.number4{--rotate:120deg}
+.number5{--rotate:150deg}
+.number6{--rotate:180deg}
+.number7{--rotate:210deg}
+.number8{--rotate:240deg}
+.number9{--rotate:270deg}
+.number10{--rotate:300deg}
+.number11{--rotate:330deg}
+.color{
+    /* position: absolute; */
+    cursor: pointer;
+    z-index: 200;
+   
+}
+.needle{
+    --rotation:0;
+    z-index: 1;
+    left: 50%;
+    transform-origin: bottom;
+    bottom: 50%;
+    transform: translateX(-50%) ;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    position: absolute;
+    background-color: var(--bgcolor);
+    transform: rotate(calc(var(--rotation)*1deg));
+}
+.sec{
+    height: 45%;
+    width: 4px;
+   --rotation:40;
+}
+.min{
+    height: 40%;
+    width: 8px;
+    background-color: black;
+    
+}
+.hrs{
+    height: 30%;
+    width: 12px;
+    background-color: black;
+   
+}
+.digi{
+    position: absolute;
+    top:70%;
+    left:33%;
+    font-size: 30px;
+    color:var(--bgcolor);
+    font-weight: bold;
+}
+.dot{
+    position: absolute;
+    --dot:0;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+ 
+    text-align: center;
+    
+    transform: rotate(calc(var(--dot)));
+}
+.dot1{--dot:6deg}
+.dot2{--dot:12deg}
+.dot3{--dot:18deg}
+.dot4{--dot:24deg}
+.dot5{--dot:30deg;color: red;}
+.dot6{--dot:36deg}
+.dot7{--dot:42deg}
+.dot8{--dot:48deg}
+.dot9{--dot:54deg}
+.dot10{--dot:60deg;color: red;}
+.dot11{--dot:66deg}
+.dot12{--dot:72deg}
+.dot13{--dot:78deg}
+.dot14{--dot:84deg}
+.dot15{--dot:90deg;color: red;}
+.dot16{--dot:96deg}
+.dot17{--dot:102deg}
+.dot18{--dot:108deg}
+.dot19{--dot:114deg}
+.dot20{--dot:120deg;color: red;}
+.dot21{--dot:126deg}
+.dot22{--dot:132deg}
+.dot23{--dot:138deg}
+.dot24{--dot:144deg}
+.dot25{--dot:150deg;color: red;}
+.dot26{--dot:156deg}
+.dot27{--dot:162deg}
+.dot28{--dot:168deg}
+.dot29{--dot:174deg}
+.dot30{--dot:180deg;color: red;}
+.dot31{--dot:186deg}
+.dot32{--dot:192deg}
+.dot33{--dot:198deg}
+.dot34{--dot:204deg}
+.dot35{--dot:210deg;color: red;}
+.dot36{--dot:216deg}
+.dot37{--dot:222deg}
+.dot38{--dot:228deg}
+.dot39{--dot:234deg}
+.dot40{--dot:240deg;color: red;}
+.dot41{--dot:246deg}
+.dot42{--dot:252deg}
+.dot43{--dot:258deg}
+.dot44{--dot:264deg}
+.dot45{--dot:270deg;color: red;}
+.dot46{--dot:276deg}
+.dot47{--dot:282deg}
+.dot48{--dot:288deg}
+.dot49{--dot:294deg}
+.dot50{--dot:300deg;color: red;}
+.dot51{--dot:306deg}
+.dot52{--dot:312deg}
+.dot53{--dot:318deg}
+.dot54{--dot:324deg}
+.dot55{--dot:330deg;color: red;}
+.dot56{--dot:336deg}
+.dot57{--dot:342deg}
+.dot58{--dot:348deg}
+.dot59{--dot:354deg}
+.dot60{--dot:360deg;color: red;} 
