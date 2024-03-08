@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+    user-select: none;
+    box-sizing: border-box;
+}
+nav{
+   
+    height: 80px;
+    width: 100%;
+    margin: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 1px 6px black;
+}
+nav .logo h1{
+    position: relative;
+    font-size: 40px;
+    color: rgb(202, 23, 163);
+    font-weight: bold;
+    cursor: pointer;
+}
+nav .logo h1 span{
+    color: rgb(95, 95, 221);
+    text-decoration: line-through;
+}
+
+nav .nav-menu li{
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    gap: 20px;
+    text-decoration: none;
+    margin: 0 20px;
+}
+nav .nav-menu li a{
+    text-decoration: none;
+    color: black;
+}
+nav .nav-menu li:hover a{
+    color: rgba(230, 20, 177, 0.986);
+}
+nav .nav-icons i{
+    margin: 0 20px;
+    font-size: 23px;
+    cursor: pointer;
+}
+nav .nav-icons i:hover{
+    color: rgba(230, 20, 177, 0.986);
+
+}
+
+/* About page*/
+
+.about{
+    top:10%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+    margin-top:50px
+}
+.about-left{
+    width: 50%;
+    padding: 20px;
+    
+}
+.about-left h1{
+    font-size: 60px;
+    color: red;
+}
+.about-left h1 span{
+    color: blue;
+    text-align: center;
+}
+.about-left p{
+    line-height: 30px;
+    margin: 40px 10px;
+}
+.about-left button{
+    padding: 15px;
+    width:40%;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    position: relative;
+    left: 30%;
+    font-size: 22px;
+    margin-top: 40px;
+    background: linear-gradient(to right,red, blue);
+    
+}
+.about-left button:hover i{
+    transition: 0.3s linear;
+    transform: translateX(30px);
+    
+}
+.about-left button:hover{
+    box-shadow: 0 0 10px red;
+    cursor: pointer;
+}
+.product{
+    margin: 0 10px;
+    width: 100%;
+    text-align: center;
+    position: absolute;    
+}
+.product .product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 0;
+}
+.product .pro-title{
+    margin: 70px 0;
+    font-size: 80px;
+    color: chocolate;
+}
+.product .box{
+    margin: 10px;
+    width: 80%;
+    min-height: 400px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px blueviolet;
+
+}
+ .product-container .left-box{
+    position: absolute;
+    display:flex ;
+    flex-direction: column;
+    flex-grow: column;
+    row-gap: 20px;
+    transform: translateX(-30%);
+    opacity: 0;
+    margin: 40px 0;
+    transition: 0.3s;
+    z-index: 100;
+
+}
+.product-container .left-box i{
+    font-size: 25px;
+    border: 1px solid black;
+    padding: 7px;
+    cursor: pointer;
+}
+.left-box i:nth-child(1){
+    color: red;
+}
+.product-container .box:hover .left-box{
+    transform: translateX(30%);
+    opacity: 1;
+}
+.product .card img{
+    width: 200px;
+    object-fit: cover;
+    margin: 10px;
+    height: fit-content;
+    transition: 0.4s linear;
+}
+.product .card:hover img{
+    transform: scale(1.2);
+}
+.product .card h2{
+    color: chocolate;
+    margin: 5px 0;
+}
+.product .card h1{
+    color: red;
+    margin: 5px 0;
+}
+.card div i{
+   font-size: 25px;
+   margin: 7px 0;
+    color: rgb(201, 165, 8);
+}
+.card button{
+    margin: 20px;
+    padding: 10px 40px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor:pointer;
+    border-radius: 10px;
+}
